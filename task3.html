@@ -83,7 +83,7 @@ body{
             e.target.textContent = currentPlayer;
             const winner = checkWinner(board);
             if (winner) {
-                aler("wins!");
+                alert("wins!");
                 resetGame();
             } else if (board.every(cell => cell)) {
                 alert('It\'s a tie!');
